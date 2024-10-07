@@ -1,0 +1,30 @@
+3 5 first_element_location:100 n:9
+
+4 n zero stop
+
+7 n count 
+7 first_element_location current
+7 zero current:0
+5 n three print_this
+1 one current next
+7 one next:0
+7 two count
+start:4 count n stop
+7 current currentcp
+1 one currentcp nextcp
+1 one next nexttonext
+1 currentcp:0 nextcp:0 nexttonext:0
+7  next current
+7  nexttonext next
+1 count one count 
+3 start
+print_this:1 one current next
+7 next next1
+7 one next1:0
+3 stop
+stop:9
+three:3
+two:2
+one:1
+zero:0 
+count:0
