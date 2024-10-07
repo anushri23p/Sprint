@@ -1,0 +1,39 @@
+3 7 seq_loc:89 
+seq_len:8
+cycle_loc:99
+cycle_len:18
+
+4 seq_len zero stop
+
+4 cycle_len zero stop
+
+ 7 seq_loc sloc
+
+7 cycle_loc cloc
+
+start:4 c_count cycle_len stop
+4 s_count seq_len dothis
+7 sloc:0 cloc:0
+1 one cloc cloc
+1 one sloc sloc
+1 c_count one c_count
+1 s_count one s_count
+3 start
+
+dothis:7 zero s_count 
+7 seq_loc frombeg
+7 cloc newcloc
+7 frombeg:0 newcloc:0
+1 s_count one s_count
+1 c_count one c_count
+1 one cloc cloc
+1 frombeg one frombeg
+7 frombeg sloc
+3 start
+one:1
+two:2
+zero:0
+c_count:0
+s_count:0
+stop:9
+1 2 3 4 5 6 7 8
