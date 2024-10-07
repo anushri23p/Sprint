@@ -1,0 +1,18 @@
+3 5 
+6 1
+5 3 two stop
+7 3 count
+ 3 sub
+sub:2 count one count 3 check1
+check1:4 count one final 3 check 
+check:5 i count add 3 copy
+copy:7 zero i 7 temp 3 7 zero temp 3 sub
+add:1 temp 3 temp 1 i one i 3 check 
+final:7 3 4 3 stop
+zero:0
+one:1
+two:2 
+temp:0
+i:0
+count:0
+stop:9
