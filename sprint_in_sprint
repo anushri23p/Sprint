@@ -1,0 +1,215 @@
+7 program_starting_address 
+  starting_add_cp
+
+
+start:7 
+program_starting_address checkone
+4 checkone:0 one addition_or_substraction
+
+7 checkone checktwo 
+4 checktwo:0 two addition_or_substraction
+
+7 checktwo checkthree
+4 checkthree:0 three jump
+ 
+7 checkthree checknine
+4 checknine:0 nine stop
+
+7 checknine checkfour 
+4 checkfour:0 four check_equal_to
+
+7 checkfour checkfive
+4 checkfive:0 five check_equal_to
+
+7 checkfive checkseven
+4 checkseven:0 seven copy_and_paste
+
+7 checkseven checkzero
+4 checkzero:0 zero
+copy_val_paste
+
+7 checkzero  checksix
+4 checksix:0 six show_pop_up
+
+
+
+
+
+
+
+addition_or_substraction:1 program_starting_address one nextcell2
+2 nextcell2:0 one addval
+1 nextcell2 one nextcell
+1 addval starting_add_cp jumptothis
+7 jumptothis num1foraddition_loc
+7 num1foraddition_loc:0 num1
+
+7 nextcell nextnumforadd
+2 nextnumforadd:0 one addval
+1 addval starting_add_cp jumptothis
+7 jumptothis num2foraddition_loc
+7 num2foraddition_loc:0 num2
+
+1 one nextcell save_addorsub
+2 save_addorsub:0 one addval
+1 addval starting_add_cp save_addorsub_here
+
+
+
+7 program_starting_address to_check_sub_or_add
+
+4 to_check_sub_or_add:0 one 
+add_num1andnum2
+
+7 save_addorsub_here savesub
+2 num1 num2 savesub:0
+1 four program_starting_address program_starting_address
+3 start
+
+
+add_num1andnum2:7 save_addorsub_here saveadd
+1 num1 num2 saveadd:0
+
+
+1 four program_starting_address program_starting_address
+3 start
+
+
+
+
+
+
+
+
+jump:1 program_starting_address one nextcell
+
+2 nextcell:0 one addval
+1 addval starting_add_cp jumptothis
+7 jumptothis program_starting_address
+
+3 start
+
+
+
+
+
+check_equal_to:1 program_starting_address one nextcell
+7 nextcell check_foreq_loc
+7 check_foreq_loc:0 check_loc_in_real 
+2 check_loc_in_real one addval
+1 addval starting_add_cp jumptothis
+7 jumptothis num1forcheckingeq_loc
+7 num1forcheckingeq_loc:0 num1
+
+1  nextcell one nextcell
+7 nextcell check_foreq_loc
+7 check_foreq_loc checknum2_loc_in_real 
+2 checknum2_loc_in_real:0 one addval
+1 addval starting_add_cp jumptothis
+7 jumptothis num2forcheckingeq_loc
+7 num2forcheckingeq_loc:0 num2
+7 program_starting_address check_five_four
+4 check_five_four:0 four check_theyare_equalornot 
+
+check_lessthan_ornot:5 num1 num2 jump_to_the_next_loc
+1 four program_starting_address program_starting_address
+3 start
+
+check_theyare_equalornot:4 num1 num2 jump_to_the_next_loc
+1 four program_starting_address program_starting_address
+3 start
+
+jump_to_the_next_loc:1 three program_starting_address program_starting_address
+7 program_starting_address go_to_this_loc
+7 go_to_this_loc:0 addval
+2 addval one  addval 
+1 addval starting_add_cp program_starting_address 
+3 start
+
+
+copy_and_paste:1 program_starting_address one nextcell
+7 nextcell check_loc_to_copy
+7 check_loc_to_copy:0 addval 
+2 addval one addval
+1 addval starting_add_cp jumptothis
+7 jumptothis cp_numforchecking
+7 cp_numforchecking:0 num1
+1 two program_starting_address 
+program_starting_address 
+7 program_starting_address paste_here
+7 paste_here:0 addval
+ 
+2 addval one addval
+1 addval starting_add_cp paste_the_val
+7 num1 paste_the_val:0
+1 one program_starting_address 
+program_starting_address
+3 start 
+
+
+
+
+
+copy_val_paste:1 program_starting_address one nextcell
+7 nextcell number_to_paste
+7 number_to_paste:0 num1 
+1 program_starting_address two 
+program_starting_address
+
+7 program_starting_address paste_here2
+7 paste_here2:0 addval
+ 
+2 addval one addval
+1 addval starting_add_cp paste_the_val2
+7 num1 paste_the_val2:0
+1 one program_starting_address 
+program_starting_address
+3 start 
+
+
+
+
+
+
+
+
+
+
+six show_pop_up:1 program_starting_address one nextcell
+7 nextcell paste_there
+7 paste_there:0 addval
+2  addval one  addval
+1 starting_add_cp addval pastethere
+6 pastethere:0
+1 program_starting_address two  
+program_starting_address 
+3 start 
+
+
+
+program_starting_address:Input_Program
+num1:0
+num2:0
+save_addorsub_here:0
+check_loc_in_real:0
+jumptothis:0
+starting_add_cp:0
+addval:0
+zero:0
+one:1
+two:2
+three:3
+four:4
+five:5
+six:6
+seven:7
+nine:9
+stop:9
+Input_Program:3 7 
+9 2 0 0 
+7 3 6 
+5 6 4 24
+2 6 4 6  
+1 5 18 5
+3 10
+9
