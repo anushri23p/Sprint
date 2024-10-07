@@ -1,0 +1,13 @@
+3 7 
+first_element_location:37 length:5 target:2 result:0
+3 start 
+start:5 count length dothis
+3 stop
+dothis:4 target location:37 changeresult 1 count one count 1 location one location  
+3 start
+changeresult:7 one result 3 stop
+one:1
+count:0
+stop:9
+e1:1
+4 6 9 9  
