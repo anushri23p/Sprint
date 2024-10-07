@@ -1,0 +1,33 @@
+3 5 
+first_element_location:65 length:10
+4 length zero stop
+7 first_element_location first
+1 length first last
+2 last one last
+
+
+start:7 last lastcp
+7 first firstcp
+7 lastcp:0 temp
+7 lastcp lastcp1
+7 firstcp:0 lastcp1:0
+7 firstcp firstcp1
+
+7 temp firstcp1:0
+
+
+1 first one first
+
+2 last one last
+5 first last start
+4 last first stop
+
+3 stop
+
+one:1
+first:0
+last:0
+temp:0
+stop:9
+zero:0
+1 2 3 4 5 6 7 8 9 10
