@@ -1,0 +1,13 @@
+3 4 address:39
+7 address location1
+1 one location1 location2
+1 location1:0 location2:0 100
+1 one location2 location3
+1 location3:0 100 100 
+1 one location3 location4
+1 location4:0 100 100 
+
+9
+one:1
+0 0 0 0 0 0 
+6 7 8 9 10 
